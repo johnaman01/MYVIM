@@ -36,7 +36,10 @@
 :nno <leader>sv :source $MYVIMRC<cr>
 "
 ""Help File is ,1
-:noremap <leader>1 :!less ~/.vi_help<cr>
+:noremap <leader>1 :vsplit ~/.vi_help<cr>
+"
+""LCL Help File is ,6 
+:noremap <leader>6 :vsplit ~/.lcl_help<cr>
 "
 ""Write is ,2
 :noremap <leader>2 :w<cr>
@@ -50,7 +53,7 @@
 ""Word Select is space
 :nno <space> viw
 ""QUIT ALL
-:noremap <leader>5 :qa<cr>
+:noremap <leader>5 :q<cr>
 "
 "
 "
