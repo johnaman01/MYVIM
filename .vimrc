@@ -1,4 +1,3 @@
-:set nocompatible
 "
 """""""""""
 "  MYVIM  "
@@ -10,19 +9,10 @@
 "set numbers in left column
 :set number
 "
-"""""""""""""
-" Indenting "
-"""""""""""""
-:set tabstop=8
-"
-:set softtabstop=2
-"
-:set shiftwidth=2
-"
-:set autoindent
-"
-:set smartindent
-"
+"""""""""""
+"Indenting"
+"""""""""""
+:set tabstop=8 softtabstop=2 shiftwidth=2 autoindent smartindent
 "
 """""""""""
 " Mapping " 
@@ -55,8 +45,6 @@
 ""QUIT ALL
 :noremap <leader>5 :q<cr>
 "
-"
-"
 """"""""""""""""""""""""""""""""""""
 " NORMAL, VISUAL and OPERATOR MODE "
 """"""""""""""""""""""""""""""""""""
@@ -65,7 +53,7 @@
 " NORMAL MODE "
 """""""""""""""
 ""Quote word
-:no <leader>qw viw<esc>a"<esc>hbi"<esc>lel
+:no <"leader>qw viw<esc>a"<esc>hbi"<esc>lel
 ""Quote string
 :no <leader>qs '<
 ""Go to beginning of line
@@ -76,12 +64,8 @@
 """""""""""""""
 " INSERT MODE "
 """""""""""""""
-""Stop using arrow keys
-:no! <up> <nop>
-:no! <left> <nop>
-:no! <right> <nop>
-:no! <down> <nop>
-""Escape is ,jk
+"
+""Escape is jk
 :no! jk <esc>
 "
 "
@@ -101,4 +85,3 @@
 """""""""""""
 ""Open the field is ,O
 :nno <leader>f o<esc>
-
